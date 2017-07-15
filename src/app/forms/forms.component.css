@@ -1,0 +1,12 @@
+section{
+  border: solid red;
+}
+h2{
+
+}
+.error{
+  color: crimson;
+  border: solid crimson;
+  border-radius: 5px;
+  padding: 15px;
+}

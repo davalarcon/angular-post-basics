@@ -1,0 +1,23 @@
+<section>
+    <h2> Forms Components </h2>
+
+  <p>'FormsModule' is what allows us to use "ngModel" and 'ngSubmit'.</p>
+
+    <h3>Fake Log In</h3>
+    <form (ngSubmit)='handleTheSubmission()'>
+      <label for="email-input"> Email</label>
+      <input type="email" id="email-input" placeholder="-----@email.com"
+                  [(ngModel)]="theUser.fakeEmail" name="fakeEmail">
+
+      <p class='error' *ngIf='emailMessage'>{{emailMessage}}</p>
+
+      <label for="password-input"> Password</label>
+
+      <p class="error" *ngIf="passwordMessage"> {{passwordMessage}}</p>
+
+      <input type="password" id="password-input" placeholder="******"
+                    [(ngModel)]="theUser.fakePassword" name="fakePassword">
+
+        <button>Log In</button>
+    </form>
+</section>
